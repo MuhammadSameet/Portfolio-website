@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import Image from "next/image";
 import image1 from "@/app/components/assets/picsart.sameet.webp"
 
