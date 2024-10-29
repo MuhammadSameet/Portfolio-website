@@ -9,7 +9,7 @@ export default function Header(){
                 <Link href={"/"}>
                 <li className="h-button">Home</li>
                 </Link>
-                <Link href={"/skills"}>
+                <Link href={"/skill"}>
                 <li className="h-button">Skills</li>
                 </Link>
                 <Link href={"/about"}>

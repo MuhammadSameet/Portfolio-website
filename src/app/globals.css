@@ -15,11 +15,11 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   /* background: linear-gradient(to left, #139f9f 40%, #ffffff 60%);; */
   /* justify-content: center; */
   background-color: #F0F0F0;
-  overflow: scroll;
+  
   
 }
 
@@ -28,14 +28,14 @@ body {
 .header {
   background-color:#1A1A1D;
   color: white;
-  height: 75px;
+  height: 65px;
  
 }
 .header-button {
   
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 20px;
   gap: 30px;
   font-size: 20px;
   /* padding: 25px; */
@@ -49,7 +49,8 @@ body {
 /* footer section */
 
 .footer {
-  margin: 10px 0;
+  margin-top:10px;
+  margin-bottom: 0px;
   background-color: #1A1A1D;
   max-width: 100%;
   height: 30vh;
@@ -85,33 +86,35 @@ h3 {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   /* margin-top: 10px; */
-  height: 100vh;
+  height: 100%;
   width: 100%;
   align-content:center ;
+  margin: 30px 0;
+  padding: 0 20px;
 
   
 }
 
 .boy-img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
+  /* width: 40%; */
+ 
 }
 
 .paragraph {
   width: 50%;
-  /* font-size: 40px;
-  font-weight: 800;
-  margin: 10px 0; */
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px 0;
+  padding: 10px;
   
 }
 
-.para {
-  width: 70%;
-  font-size: 25px;
-  font-weight: 700;
-}
+
 
 .para span {
   font-size: 30px;
@@ -120,6 +123,8 @@ h3 {
 }
 
 .home-contact-button {
+  border-radius: 8px;
+  font-size: 20px;
   margin: 10px 0;
   padding: 10px;
   color: #FFF;
@@ -148,10 +153,10 @@ background-color: #3DFEAE;
   
   background-color: var(--green-);
 
-  width: 600px;
-  height: 600px;
-  padding: 12px 8px;
-  margin: 20px 0;
+  width: 500px;
+  height: 500px;
+  padding: 10px 6px;
+  margin: 15px 0;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 
@@ -159,26 +164,26 @@ background-color: #3DFEAE;
 
 .contact-page-h1 {
   margin-top: 0px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
   text-align: center;
   color: var(--grey);
 }
 
 form {
-  margin: 15px;
+  margin: 10px;
 
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 5px;
   color: black;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--black);
 }
 
@@ -337,324 +342,293 @@ p {
 .about-paragraph {
   align-content:center ;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .about-paragraph h2 {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 600;
-  margin: 15px 0;
+  margin-top: 20px;
   text-align: center;
 }
 
 .boy-img-about {
-  margin: 20px auto 0;
-  width: 200px;
+  margin: 10px auto;
+  width: 150px;
+  height: 150px;
+  
   
 }
 
 .about-para span {
   font-size: 35px;
   font-weight: 600;
-  display: block;
+  /* display: block; */
   text-align: center;
   color: var(--blue-);
 }
 
 .about-para {
-  margin: 20px auto 0;
+  display: block;
+  margin: 10px auto;
   width: 60%;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 
 /* responsive */
 
 
+@media (max-width: 991px) { }
 
-@media only screen and (min-width:640px) {
-  
-  
-  /* home page */
+@media (max-width: 767px) { 
 
-  .boy-img {
-    width: 300px;
-    height: 300px;
-  }
   
-  .paragraph {
-    width: 100%;
+  /* contact */
+
+  .contact {
     justify-content: center;
-    padding: 40px;
-    margin-top: 20px;
-    
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
   
-  .para {
-    width: 100%;
-    font-size: 20px;
+  .contact-page {
+    
+    background-color: var(--green-);
+    width: 350px;
+    height: 450px;
+    padding: 6px 4px;
+  }
+  
+  .contact-page-h1 {
+
+    font-size: 22px;
     font-weight: 500;
   }
   
-  .para span {
-    font-size: 25px;
-    font-weight: 600;
-    color: #00A8E8;
-    margin-top: 20px;
+  form {
+    margin: 7px;
   }
   
-  .home-contact-button {
-    width: 100%;
+  .form-group {
+    margin-bottom: 7px;
   }
-
-   /* about page */
-
-   .about-paragraph {
-    align-content:center ;
-    width: 100%;
-    height: 100vh;
-    
+  
+  .form-group label {
+   
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+  
+  .form-group input, .form-group textarea{
+    padding: 8px;
     
   }
-  
-  .boy-img-about {
-    width: 200px;
-    margin-bottom: 20px;
+
+
+  .submit-button {
+    padding: 8px;
+    font-size: 15px;
   }
-  
-  .about-para span {
-    font-size: 35px;
-    font-weight: 400;
-    text-align: center;
-    color: var(--blue-);
-    width: 100%;
-    text-align: left;
+
+    /* about us */
+
+    .about-paragraph {
+      margin: 10px 20px 0 0;
+    }
+    
+    .about-paragraph h2 {
+      font-size: 25px;
+      font-weight: 600;
+      margin: 20px 0;
+    
+    }
     
     
-  }
+    .about-para span {
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
   
-  .about-para {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 35px;
-  }
+    }
+    
+    .about-para {
+      margin: 10px 0;
+      width: 100%;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 15px;
+    }
 
 
-  /* contact page */
-
-  
-.contact {
-  margin: 20px auto
-}
-
-.contact-page {
-  background-color: var(--green-);
-  width: 500px;
-  height: 500px;
-  padding: 6px 6px;
-  margin: 30px auto;
-}
-
-form {
-  margin: 8px;
-}
-
-.form-group input, .form-group textarea {
-  padding: 6px;
-}
-
-}
-
-
-@media only screen and (min-width:375px) {
-
-  body{
-    flex-wrap: wrap;
-  }
-
-
-  /* home page */
-
-  
-.portfolio {
-  width: 100%;
-  height: 110vh;
-  margin: 10px 0;
-  margin-bottom: 10px;
-}
-
+    
 .boy-img {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+ 
 }
 
 .paragraph {
   width: 100%;
-  padding: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 10px;
+  
 }
-
-.para {
-  width: 100%;
-  font-size: 20px;
-  font-weight: 500;
-
-}
-
-.para span {
-  font-size: 26px;
-  font-weight: 600;
 
 }
 
-.home-contact-button {
-  width: 100%;
-}
+@media (max-width: 479px) {
 
+  /* header */
 
-/* header / Footer */
-
-
+  
 .header {
-  background-color:#1A1A1D;
-  color: white;
-  height: 75px;
- 
+  height: 55px;
 }
+
 .header-button {
-  
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  /* padding: 30px; */
-  gap: 30px;
+  padding: 15px;
+  gap: 20px;
   font-size: 15px;
-  /* margin: 20px; */
-  /* padding: 25px; */
+}
+
+
+
+
+  /* contact */
+
+  .contact {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
   
-}
+  .contact-page {
+    
+    background-color: var(--green-);
+  
+    width: 250px;
+    height: 370px;
+    padding: 6px 4px;
+    margin: 20px 10;
+    border-radius: 10px;
 
-.h-button:hover {
-  color: #3DFEAE;
-}
+  
+  }
+  
+  .contact-page-h1 {
 
-/* footer section */
+    font-size: 15px;
+    font-weight: 500;
+   
+  }
+  
+  form {
+    margin: 5px;
+  
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+  
+  .form-group label {
+   
+    margin-bottom: 5px;
+    font-size: 12px;
+  
+  }
+  
+  .form-group input, .form-group textarea{
+    padding: 6px;
+    
+     
+  }
 
-.footer {
-  margin: 10px 0;
-  height: 40vh;
 
-}
+  .submit-button {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
 
-h3 {
-  font-size: 20px;
-  font-weight: 750;
-}
+  /* about us */
 
-/* skills */
+  .about-paragraph {
+    margin: 10px 20px 0 0;
+  }
+  
+  .about-paragraph h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+  
+  }
+  
+  
+  .about-para span {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+  }
+  
+  .about-para {
+    margin: 10px 0;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px;
+  }
+
+  /* skill section */
 
 .skill-full-page {
-  width: 100%;
-  height: 100vh;
-  align-content:center ;
-  
-  margin-top: 30px;
-  margin-bottom: 10px;
- 
+  height: 100%;
+}
+
+p {
+  font-size: 15px;
+}
+
+.skill-container h1{
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .skill-container {
-  padding: 40px 15px;
-  margin: 10px auto;
-  width: 80%;
-  height: 50vh;
-}
-
-/* contact us */
-
-.contact-page {
-  width: 300px;
-  height: 400px;
-  padding: 4px 2px;
+  padding: 20px 15px;
   margin: 20px auto;
+  height: 70%;
 }
 
-.contact-page-h1 {
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  color: var(--grey);
+
+.skill-level {
+  height: 22px;
 }
 
-form {
-  margin: 7px;
 
+
+
+.boy-img {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+ 
 }
 
-.form-group {
-  margin-bottom: 7px;
-}
-
-.form-group label {
-  margin-bottom: 5px;
-  font-size: 12px;
-}
-
-.form-group input, .form-group textarea {
+.paragraph {
   width: 100%;
-  padding: 6px;
-  border-radius: 4px;
-}
-
-.submit-button {
-  padding: 8px;
-  font-size: 12px;
-  font-weight: 400;
-  border-radius: 4px;
-}
-
-/* about us page */
-
-
-.about-paragraph {
-  align-content:center ;
-  width: 100%;
-  height: 100vh;
-  margin: 10px auto;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.about-paragraph h2 {
-  font-size: 30px;
-  font-weight: 500;
-  /* margin: 7px auto; */
-  text-align: center;
-}
-
-.boy-img-about {
-  margin: 10px auto;
-  width: 200px;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 10px;
   
 }
-
-.about-para span {
-  font-size: 25px;
-  font-weight: 500;
-  text-align: center;
-  color: var(--blue-);
-  width: 100%;
-}
-
-.about-para {
-  /* margin: 5px auto; */
-  width: 100%;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px 20px;
-}
-
-
-
-}
+  
+ }

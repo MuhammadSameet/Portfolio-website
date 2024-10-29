@@ -11,11 +11,11 @@ export default function Contact(){
                         <input type="text" name="name" placeholder="Enter Your Name" required />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="email">Your Email::</label>
+                        <label htmlFor="email">Your Email:</label>
                         <input type="text" name="email" required placeholder="ABC@gmail.com" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="message">Your Message::</label>
+                        <label htmlFor="message">Your Message:</label>
                         <textarea name="message" rows={5} required placeholder="Enter Your Message"></textarea>
                     </div>
                     <button type="submit" className="submit-button">Submit</button>

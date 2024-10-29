@@ -1,8 +1,6 @@
 import Image from "next/image";
-import image1 from "@/app/assests/picsart.sameet.webp"
-import Skills from "@/app/components/skill/page";
-import About from "@/app/components/about/page";
-import Contact from "@/app/components/contact/page";
+import image1 from "@/app/components/assets/picsart.sameet.webp"
+
 
 
 export default function Home() {
@@ -19,9 +17,7 @@ export default function Home() {
       <div className="boy-img"><Image src={image1} alt="office boy image" /></div>
       
       </div>
-      <Skills/>
-      <About/>
-      <Contact/>
+      
    </>
   );
 }
