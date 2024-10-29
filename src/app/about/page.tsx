@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import picture from "@/app/components/assets/picsart.sameet.webp";
 import image1 from "@/app/components/assets/picsart.sameet.webp"
 
 
